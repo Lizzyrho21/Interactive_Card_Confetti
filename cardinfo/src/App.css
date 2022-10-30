@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.img-section{
+  background-image: url(./images/bg-main-mobile.png);
+  width:100%;
+  /* using grid for our card images */
+  display: grid;
+  /* How many columns our gird will have */
+  /* 1fr value is for the browser to calculate the availabel space*/
+  grid-template-columns: repeat(12, 1fr); 
+
+
+  /* allows for z-indexes */
+  position: relative;
+
+  padding-bottom:5%;
+}
+
+.image-stack__item--top {
+  grid-column: 1 / span 8;
+  /*   must be on the same row as the other image */
+  grid-row: 1;
+  /*  this pushes the image down, and keeps it proportional as it resizes */
+  padding-top: 20%; 
+  /* make this image render on top of the bottom */
+  z-index: 1; 
+  padding-left:10%;
+  height:5px;
+
+
+}
+
+.image-stack__item--top > img{
+  box-shadow: 6px 6px 5px 0px rgba(40, 40, 40, 0.75);
+  border-radius: 6px;
+}
+
+.image-stack__item--bottom {
+  grid-column: 4 / -1;
+  /*  make this image be on the same row */
+  grid-row: 1; 
+  padding-top:4%;
+  margin-top:2%;
+}
+
+.image-stack__item--logo{
+
+  /* padding-bottom: 30%;  */
+  padding-left:40%;
+  z-index: 1;
+
+
+
+}
+
+
+form{
+  padding-top:50%;
+}
