@@ -1,81 +1,138 @@
 
-
-/* Responsive CSS -- Look up how to use media queries in React  */
+@media (max-width: 600px) {
+  
 .App {
   text-align: center;
 }
 
-.img-section{
+.img-section {
   background-image: url(./images/bg-main-mobile.png);
   /* background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
-  width:100%;
+  max-width: 60rem;
   /* using grid for our card images */
   display: grid;
   /* How many columns our gird will have */
   /* 1fr value is for the browser to calculate the availabel space*/
-  grid-template-columns: repeat(12, 1fr); 
-
+  grid-template-columns: repeat(12, 1fr);
 
   /* allows for z-indexes */
   position: relative;
 
-  padding-bottom:5%;
+  /* padding-bottom: 2%; */
 }
+
 /* Front of card */
 .image-stack__item--top {
   grid-column: 1 / span 8;
   /*   must be on the same row as the other image */
   grid-row: 1;
   /*  this pushes the image down, and keeps it proportional as it resizes */
-  padding-top: 40%; 
+  padding-top: 40%;
   /* make this image render on top of the bottom */
-  z-index: 1; 
-  padding-left:10%;
-  height:5px;
-
-
+  z-index: 1;
+  padding-left: 10%;
+  height: 5px;
+  /* min-width:60em; */
 }
 
-.image-stack__item--top > img{
+.image-stack__item--top>img {
   box-shadow: 6px 6px 5px 0px rgba(40, 40, 40, 0.75);
   border-radius: 6px;
 }
+
 /* Back of card */
 .image-stack__item--bottom {
   grid-column: 4 / -1;
   /*  make this image be on the same row */
-  grid-row: 1; 
-  padding-top:5%;
-  margin-top:20px;
-  margin-left:-40px;
+  grid-row: 1;
+  padding-top: 5%;
+  margin-top: 20px;
+  margin-left: -40px;
+  
 }
 
-.image-stack__item--logo{
+.image-stack__item--logo {
+   /* padding-bottom: 30%;   */
+  /* grid-column: 1; */
+    /* must be on the same row as the other image  */
+  /* grid-row: 1; */
+  /* background-color:black; */
+position: relative;
+bottom:13.5em;
+right:5em;
+/* top:10px; */
+padding-left: 1px;
+padding-top:10px;
 
-  /* padding-bottom: 30%;  */
-  padding-left:40%;
-  margin-top:-40px;
-  z-index: 1;
-  /* position: relative; */
 
 
 }
 
-.image-stack__item--cardnumbers{
+.image-stack__item--cardnumbers {
   z-index: 1;
   position: relative;
-  top:-80px;
- /* display:inline; */
- white-space: nowrap;
- font-size: 18px;
- color: #fff;
- letter-spacing:5px;
+  bottom: 85px;
+  padding-left: 1px;
+  /* display:inline; */
+  white-space: nowrap;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 5px;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
+.image-stack__item--cardname {
+  z-index: 1;
+  position: relative;
+  /* top:20px; */
+  bottom: 7em;
+  right: 4em;
+  padding-top: 2px;
+  /* display:inline; */
+  white-space: nowrap;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 1px;
+  overflow: hidden;
+  text-overflow: clip;
+  padding-left:1px;
+}
 
-form{
-  padding-top:50%;
+.image-stack__item--cardexp {
+  z-index: 1;
+  position: relative;
+  bottom: 7rem;
+  padding-right: 4px;
+
+  left: 8em;
+  padding-top: 2px;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.image-stack__item--cvc{
+  /* z-index: 1; */
+  color: #fff;
+  letter-spacing: 1px;
+  font-size:10px;
+  grid-column: 1;
+  /*   must be on the same row as the other image */
+  /* grid-row: 2; */
+  padding-left:15em;
+  position: relative;
+  top:8.5em;
+  left:1em;
+
+}
+
+form {
+  padding-top: 50%;
+}
+
 }
 
