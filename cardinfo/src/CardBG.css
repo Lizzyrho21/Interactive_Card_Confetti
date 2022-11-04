@@ -1,0 +1,77 @@
+
+@media (max-width: 500px){
+.main-container{
+background-image: url(./images/bg-main-mobile.png);
+background-size: cover;
+background-repeat: no-repeat;
+display:grid;
+grid-template-columns: repeat(1fr, 5);
+/* grid-auto-rows: auto; */
+/* grid-template-rows: repeat (1fr, 3); */
+/* gap:1em; */
+/* width:100%; */
+/* padding-top:10em; */
+
+
+
+
+}
+
+.image-stack__item{
+    /* position: relative;
+    grid-row: 1 / 2;
+    bottom:3em; */
+    position: relative;
+    padding:2em;
+    grid-row: 1 / 2;
+    margin-left:2em;
+
+}
+
+
+.image-stack__item--back{
+
+    /* background-color:red; */
+    background-image: url(./bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size:200px;
+    width:200px;
+    background-position: left;
+    /* background-color:green; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    left:15%;
+    top:15%;
+
+
+    
+}
+
+.image-stack__item--back > h4 {
+    position: relative;
+    top:10%;
+    left:60%;
+    width: 30px;
+    font-size:12px;
+    /* background-color:red; */
+}
+
+
+.image-stack__item--front{
+    background-image: url(./bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size:200px;
+    width:200px;
+    background-position: left;
+    /* background-color:green; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    top:50%;
+    left:5%;
+
+
+
+}
+
+}
