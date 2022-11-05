@@ -24,7 +24,7 @@ grid-template-columns: repeat(1fr, 5);
     position: relative;
     padding:2em;
     grid-row: 1 / 2;
-    margin-left:2em;
+    margin-left:1em;
 
 }
 
@@ -49,11 +49,12 @@ grid-template-columns: repeat(1fr, 5);
 
 .image-stack__item--back > h4 {
     position: relative;
-    top:10%;
+    top:25%;
     left:60%;
     width: 30px;
     font-size:12px;
     /* background-color:red; */
+    color: #fff;
 }
 
 
@@ -70,8 +71,42 @@ grid-template-columns: repeat(1fr, 5);
     top:50%;
     left:5%;
 
+}
 
+.deets{
+    color:#fff;
+    font-size:16px;
+    position:relative;
+}
+
+.icon{
+    position:absolute;
+    top:20%;
+    /* background-color:green; */
+    right:11.5em;
+    padding:0;
+    margin:0;
+}
+
+.cardNum {
+ 
+top:20%;
+right:12.5%;
+/* line-height: em; */
+width:100%;
+/* background-color: green; */
+letter-spacing: 2px;
+}
 
 }
 
+.cardName {
+font-size:12px;
+top:25%;
+right:12%;
+}
+
+.cardEx{
+    left:55%;
+    font-size:12px;
 }
