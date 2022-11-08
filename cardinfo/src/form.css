@@ -1,0 +1,19 @@
+
+.form-container {
+    /* position:absolute; */
+
+    padding-top:5em;
+    margin-top:2em;
+    margin-left:2em;
+    margin-right:2em;
+
+    color:  hsl(278, 68%, 11%);
+}
+
+
+
+/* TODO: Fogure out how to change the blue glow  */
+input:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+} 

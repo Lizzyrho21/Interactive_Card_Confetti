@@ -1,7 +1,7 @@
 // import "./App.css";
 
 import CardBG from './components/CardBG';
-import Form from './components/Form';
+import CardForm from './components/Form';
 
 function App() {
   
@@ -11,7 +11,7 @@ function App() {
     
     <>
     <CardBG />
-    <Form/>
+    <CardForm/>
     </>
   );
 }

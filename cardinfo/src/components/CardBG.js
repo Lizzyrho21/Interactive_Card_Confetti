@@ -3,12 +3,12 @@ import '../CardBG.css';
 import { useState} from "react";
 
 
-
+//Mramor
 
 function CardBG() {
 
 const [name, setName] = useState("John Appleseed");
-  const [cardNum, setCardNum] = useState("0000 0000 0000");
+  const [cardNum, setCardNum] = useState("0000 0000 0000 0000");
   const [expiration, setExpDate] = useState("00/00");
   const [cvc, setCvc] = useState("000");
     return (  
@@ -30,4 +30,4 @@ const [name, setName] = useState("John Appleseed");
     );
 }
 
-export default CardBG ;
+export default CardBG;
