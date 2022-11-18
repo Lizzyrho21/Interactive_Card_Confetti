@@ -9,10 +9,10 @@ function App() {
 
   return (
     
-    <>
+    <div className="desktop-container--flex">
     <CardBG />
     <CardForm/>
-    </>
+    </div>
   );
 }
 
