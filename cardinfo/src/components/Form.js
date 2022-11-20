@@ -49,7 +49,7 @@ const CardForm = () => {
         </Form.Group>
 
         <Form.Group as={Col} xs={3} className="mb-3" controlId="cvc">
-        <Form.Label>CVC</Form.Label>
+        <Form.Label className="cvc-label">CVC</Form.Label>
         <Form.Control type="text" placeholder="e.g 132" />
         </Form.Group>
         
